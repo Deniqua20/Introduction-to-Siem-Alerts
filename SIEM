@@ -1,0 +1,28 @@
+ Phishing Alert: Investigating and Mitigating a Threat Using a SIEM (Lab Exercise) 
+I recently completed a lab exercise where I handled a phishing alert flagged by a SIEM. This scenario gave me valuable hands-on experience in identifying, investigating, and mitigating a phishing threat. Here’s a breakdown of the steps I followed and what I learned.
+
+📍 The Scenario:
+The SIEM generated an alert titled "Phishing Alert - Deceptive Mail Detected."
+I created a case and began investigating. The email immediately raised concerns due to spelling errors and an unusual sender address.
+
+📍 Investigation Process:
+
+Email Review: I carefully examined the email content and identified suspicious elements, such as spelling mistakes and unknown links.
+Threat Validation:
+I checked the sender’s IP address and URLs in VirusTotal, which confirmed they were associated with malicious activity.
+Endpoint Activity Analysis:
+Using Endpoint Detection and Response (EDR), I reviewed the user’s activity. The logs showed that the user had clicked on the malicious link.
+System Containment:
+Through the EDR, I isolated the affected system from the network to prevent any potential spread of malware or further damage.
+
+📍 Mitigation Steps:
+
+Deleted the phishing email from the user’s inbox to stop further interaction.
+Quarantined and investigated the affected system for additional signs of compromise.
+Documented all findings and actions in the incident response playbook for thorough reporting and future improvement.
+
+💡 Key Takeaways:
+
+Review Every Email: This lab reinforced how critical it is to thoroughly review emails for signs of phishing. Even small details, like spelling errors, can indicate a larger threat.
+Employee Training is Crucial: Proper training for employees is vital. Ensuring they know how to identify phishing emails and report them can significantly reduce risk.
+
